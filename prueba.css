@@ -1,0 +1,45 @@
+.carrusel-container {
+  padding: 20px;
+  background-color: #111;
+  color: white;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.carrusel img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+
+.carrusel img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Opcional: ocultar scrollbar */
+/* .carrusel::-webkit-scrollbar {
+  display: none;
+} */
+
+
+
+body {
+  background-color: #111;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
