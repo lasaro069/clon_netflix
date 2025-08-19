@@ -6,11 +6,10 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/imagenes/peliculas/fondo-netflix.png");
   background-size: cover;
   background-attachment: fixed;
-  background-color: wheat;
 
 }
 
@@ -46,18 +45,18 @@ body {
   position: fixed;
   top: 0px;
   height: auto;
-  min-height: 70px;
-  width: 80%;
+  min-height: 92px;
+  width: 1072px;
   margin-left: 4%;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)); */
 
 }
 
 
 .navbar .logo-netflix {
-  width: 120px;
-  height: auto;
+  width: 148px;
+  height: 42px;
 }
 
 
@@ -69,23 +68,115 @@ body {
 
 
 .formulario {
-  background-color: blue;
-  max-width: 450px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  max-width: 480px;
   height: 700px;
-  margin-top: 100px;
+  margin-top: 90px;
+}
+
+.titulo {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-block: 0;
+  font-size: 2rem;
+}
+
+/* formulario de registro */
+
+
+.container-form {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.container-form .form-row {
+  width: 80%;
+  justify-content: space-evenly;
+
+}
+
+.container-form input {
+  background: transparent;
+  color: white;
+  min-height: 60px;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.container-form input::placeholder {
+  /* color: rgb(189, 187, 187); */
+  color: #808080;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.container-form .btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 
-.formulario .form-floating {
-  width: 300px;
+
+
+button, .container-form button {
+  width: 352px;
+  height: 40px;
 }
 
-.d-flex .btn{
-  justify-content: center;
+.titulo, .suscribete, .recordarme, .proteccion, .mas-info {
+  width: 352px;
+}
+
+.suscribete span {
+  color: #8d8d8d;
+}
+
+.contrasena a {
+  color: #fff;  
 }
 
 
+.proteccion p {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.mas-info a {
+  font-size: 0.8rem;
+}
 
 
+/* footer */
+footer {
+  background: #161616;
+  margin-top: 60px;
+}
 
+footer p, footer a {
+  color: #808080;
+}
 
+footer .container {
+}
+
+.preguntas {
+
+}
+
+.enlaces {
+
+}
+
+.idioma ul{
+  width: 150px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.copy {
+
+}
