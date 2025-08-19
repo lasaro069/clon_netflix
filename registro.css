@@ -118,6 +118,10 @@ body {
   font-weight: 200;
 }
 
+.container-form a {
+  text-decoration: none;
+  color: #fff;
+}
 
 
 

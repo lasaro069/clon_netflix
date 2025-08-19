@@ -112,6 +112,13 @@ body {
   left: 20px;
 
 }
-.carousel-control-prev i, .carousel-control-next{
+
+.carousel-control-prev, .carousel-control-next{
   font-size: 40px;
+  width: 40px;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
 }

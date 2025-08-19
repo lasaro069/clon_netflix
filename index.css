@@ -61,6 +61,7 @@ body {
 
 .navbar a {
   color: white;
+  text-decoration: none;
 }
 
 .navbar-collapse {
@@ -179,6 +180,10 @@ a .dropdown-toggle {
   width: 360px;
 }
 
+.carousel-item img:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
 
 .carousel-control-next {
   justify-content: right;
@@ -190,8 +195,11 @@ a .dropdown-toggle {
   left: 20px;
 
 }
-.carousel-control-prev, .carousel-control-next {
-  font-size: 50px;
+
+
+.carousel-control-prev, .carousel-control-next{
+  font-size: 40px;
+  width: 40px;
 }
 
 
