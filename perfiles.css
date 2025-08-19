@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #161616;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+}
+
+.principal {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  margin: 26px 0px;
+}
+
+
+
+/* perfiles */
+
+.perfiles {
+  margin: 19px 0px;
+}
+
+.perfiles .tarjetas {
+  justify-content: space-around;
+}
+
+.tarjetas .card {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.tarjetas img {
+  width: 153px;
+}
+
+.tarjetas p {
+  text-align: center;
+  color: #808080;
+}
+
+
+/* administrar perfiles */
+
+.administrar {
+  margin: 50px 20px 0;
+}
+
+
+.form-row button {
+  background: transparent;
+  color: #808080;
+  height: 42px;
+  width: 260px;
+  border: 1px solid #808080;
+}
+
+.form-row button:hover {
+  /* color: rgb(189, 187, 187); */
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.tarjetas .card:hover, .admninistrar form:hover {
+  img {
+  border: 3px solid white;
+  };
+  p {
+    color: #fff;
+  };
+  cursor: pointer;
+}
+

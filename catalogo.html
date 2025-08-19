@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="catalogo.css" />
+    <title>Clon Netflix</title>
+  </head>
+  <body>
+    <!-- contenedor cabecera -->
+    <div class="container-fluid">
+      <!-- barra de navegacion -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo-netflix"
+              src="/imagenes/logos/netflix.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Series</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Novedades</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- seccion principal -->
+      <section class="seccion-principal">
+        <!-- imagen de fondo -->
+        <div class="contenedor-imagen">
+          <img
+            class="imagen"
+            src="/imagenes/peliculas/suspenso/suspenso4.png"
+            alt=""
+          />
+        </div>
+        <!-- contenedor informativo -->
+        <div class=" container informacion">
+          <div class="container titulo">
+            <img src="./imagenes/logos/rapidos-furiosos.png" alt="" />
+          </div>
+          <div class="container descripcion">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+              inventore perferendis tenetur, laudantium est quasi amet placeat,
+              labore quia quam quis veritatis, provident alias! Aliquid optio
+              error pariatur impedit minus.
+            </p>
+          </div>
+          <div class="container botones">
+            <button type="button" class="btn btn-light">
+              <i class="bi bi-play-fill"></i>
+              Reproducir
+            </button>
+            <button type="button" class="btn btn-light">Más Info</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SECCION CLASIFICACION DE PELICULAS -->
+    
+    <!-- peliculas de suspenso -->
+    <section class="container-fluid my-4">
+      <h2 class="text-white">Peliculas de Suspenso</h2>
+      <div id="carouselSuspenso" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso1.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso10.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso2.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso3.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso4.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso5.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso6.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso7.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso8.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso9.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso10.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso1.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso2.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/suspenso/suspenso3.jpg"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones anterior - siguiente -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSuspenso"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSuspenso"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    
+    <!-- series -->
+    <section class="container-fluid my-4">
+      <h2 class="text-white">Series</h2>
+      <div id="carouselSeries" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/series/series1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series2.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series1.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series10.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series9.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series8.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series7.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/series/series6.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series5.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series4.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series3.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series2.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series10.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/series/series1.png"
+
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Botones anterior - siguiente -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSeries"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSeries"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    
+    <!-- peliculas de Accion -->
+    <section class="container-fluid my-4">
+      <h2 class="text-white">Peliculas de Acción</h2>
+      <div id="carouselAccion" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/accion/accion1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion10.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion11.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion2.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion4.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion5.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/accion/accion6.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion7.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion8.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion9.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion10.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion11.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Botones anterior - siguiente -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAccion"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAccion"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    
+    <!-- peliculas Romanticas -->
+    <section class="container-fluid my-4">
+      <h2 class="text-white">Peliculas Roamnticas</h2>
+      <div id="carouselRomanticas" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas2.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas4.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas5.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas6.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas2.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas4.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas5.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas6.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/romanticas/romanticas7.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Botones anterior - siguiente -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselRomanticas"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselRomanticas"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    
+    <!-- peliculas de Terror -->
+    <section class="container-fluid my-4">
+      <h2 class="text-white">Peliculas Románticas</h2>
+      <div id="carouselTerror" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/accion/accion1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion2.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion4.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion5.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion6.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion7.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <img
+                src="/imagenes/peliculas/accion/accion8.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion9.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion10.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion11.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion1.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion2.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+              <img
+                src="/imagenes/peliculas/accion/accion3.png"
+                class="img-fluid rounded"
+                style="width: 200px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Botones anterior - siguiente -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselTerror"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselTerror"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
