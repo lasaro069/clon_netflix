@@ -1,0 +1,389 @@
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+    url("/imagenes/peliculas/fondo-netflix.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: wheat;
+
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.imagen-fondo {
+  position: fixed;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)); */
+}
+
+.imagen-fondo img {
+  width: 100%;
+
+}
+
+.principal {
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 0;
+}
+
+
+/* navbar */
+.navbar .container-fluid {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.navbar, .navbar .container-fluid{
+  position: fixed;
+  top: 0px;
+  height: auto;
+  min-height: 70px;
+  width: 80%;
+  margin-left: 4%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+
+}
+
+
+.navbar .logo-netflix {
+  width: 120px;
+  height: auto;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+
+
+.navbar .dropdown {
+  border: 2px solid rgb(97, 91, 91);
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 120px;
+  color: white;
+}
+
+.dropdown a {
+  color: white;
+}
+
+.dropdown-menu {
+  background: black;
+}
+
+a .dropdown-toggle {
+  color: white;
+}
+
+.navbar .btn-danger {
+  width: auto;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+
+.informacion {
+  bottom: 0px;
+  position: relative;
+  margin-top: 12%;
+  text-align: center;
+}
+
+.informacion h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.informacion h2 {
+  font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.informacion p {
+  font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;  
+}
+
+.container-form {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.container-form .form-row {
+  width: 80%;
+  justify-content: space-evenly;
+
+}
+
+.container-form input {
+  background: transparent;
+  color: white;
+  min-height: 60px;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.container-form input::placeholder {
+  color: rgb(189, 187, 187);
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.container-form .btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+
+
+.container-oscuro{
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* tendencias */
+
+
+
+.tendencias {
+  height: 400px;
+  margin-top: 50px;
+}
+
+.tendencias .carousel-item {
+}
+
+.d-flex .tendencias img {
+  width: 360px;
+}
+
+
+.carousel-control-next {
+  justify-content: right;
+  right: 20px;
+}
+
+.carousel-control-prev {
+  justify-content: left;
+  left: 20px;
+
+}
+.carousel-control-prev, .carousel-control-next {
+  font-size: 50px;
+}
+
+
+
+/* motivos */
+
+.motivos {
+  padding-top: 0px;
+}
+.container-motivos {
+  background: black;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+.card-body {
+  background-image: linear-gradient(135deg, rgb(35, 10, 77), rgba(40, 4, 4, 1));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-body img {
+  align-self: flex-end;
+  width: 100px;
+  margin-top: 0px;
+}
+
+.card-body h5 {
+  font-family: Georgia, 'Times New Roman', Times, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: white;
+  height: 70px;
+  
+}
+
+.card-body  p {
+  font-family: 'Arial', Helvetica, sans-serif;
+  color: white;
+  height: 120px;
+}
+
+
+
+
+
+
+
+
+
+/* preguntas frecuentes */
+
+.container-preguntas {
+  padding-top: 50px;
+  height: auto;
+}
+
+.container-preguntas h2 {
+  color: white;
+}
+.accordion {
+  border: none;
+}
+
+.accordion-button {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.accordion-body {
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+}
+
+.accordion-item {
+  border: none;
+  margin-top: 5px;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.accordion-button:hover{
+  background-color: #414141;
+}
+
+.accordion-header .collapsed::after {
+  
+}
+
+
+/* footer */
+.footer {
+  padding-top: 50px;
+  color: white;
+  height: auto;
+}
+
+.container-preguntas {
+  color: #808080;
+  padding-top: 50px;
+}
+
+.container-enlaces {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+}
+
+.container-enlaces a {
+  color: #808080;
+  text-decoration: none;
+
+}
+
+.container-idioma {
+  padding-top: 50px;
+}
+
+
+.container .dropdown {
+  border: 2px solid rgb(97, 91, 91);
+  border-radius: 5px;
+  margin-right: 20px;
+  padding-left: 6px;
+  width: 120px;
+  color: white;
+}
+
+.container-netflix-colombia {
+  color: #808080;
+  padding-top: 50px;
+}
+
+.container-derechos {
+  color: #808080;
+}
+
+.container-copy {
+  color: #808080;
+  text-align: center;
+
+}
+
+
+
+
+
+/* DISEÑOS RESPONSIVOS */
+
+@media screen and (min-width: 1200px) {
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .container-form .btn {
+    font-size: 1rem;
+    max-width: 30%;
+}
+  .form-row input {
+    max-width: 50%;
+  }
+  
+  
+}
+
+@media screen and (max-width: 768px) {
+  .container-form .btn {
+  font-size: 0.8rem;
+}
+
+  .card-body img{
+    display: none;
+    max-height: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+
+  
+}
